@@ -1,0 +1,25 @@
+#billing system (basic)
+p=[]
+pr=[]
+total=0
+size=int(input("enter the size"))
+for i in range(size):
+  a=input(f"enetr the product name{i+1}:")
+  p.append(a)
+for i in range(size):
+  b=input(f"enetr the price{i+1}:")
+  pr.append(b)
+for i in range(size):
+  total=total+int(pr[i])
+  print("=====bill=====")
+  print(p[i],"==",pr[i])
+print("total",total)
+print("do you want gst")
+c=input("enter yes or no:")
+if c=="yes" or c=="YES" or c=="y":
+  a=int(input("enetr thhe gst amount"))
+  gst=total*a/100
+  totala=total+gst
+  print("total",totala)
+else:
+  print("total",total)
