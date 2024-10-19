@@ -1,0 +1,8 @@
+a= [ 11,22,33,44,55,66,77,88,999,98,45,88]
+print("the data in ascending order")
+for i in range(len(a)):
+  
+  print(f"the data {i+1} is:",Data[i])
+  a.sort()
+ 
+print("the second largest data is:",a[-2])
