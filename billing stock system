@@ -1,0 +1,33 @@
+dict=[]
+
+product={}
+while True:
+
+  a=input("enter the sku number:")
+  b=input("eneter product name:")
+  c=int(input("eneter product quantity:"))
+  d=int(input("eneter product price:"))
+  product={"SKU NUMBER":a,"productname":b,"quantity":c,"price":d}
+  dict.append(product)
+  print(dict)
+  e=input("want to add more:")
+  if e=="n" or e=="N":
+   break
+  else:
+    continue
+print("want to search using sku values")
+f=input("enetr the sku number:")
+if product["SKU NUMBER"]==f:
+  for i in product:
+      totalcost=product["quantity"]*product["price"]
+      productname=product["productname"]
+      quantity=product["quantity"]
+      price=product["price"]
+  print("=====bill=====")
+  print("total cost=",totalcost)
+  print("product name=",productname)
+  print("quantity=",quantity)
+  print("price=",price)
+    
+else:
+      print("not found")
